@@ -8,8 +8,8 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import Dashboard from './components/Dashboard';
 import Navbar from './components/Navbar';
-import ViewEvent from './components/viewEvent';
 import CreateEvent from './components/CreateEvent';
+import ViewEvent from './components/ViewEvent';
 
 export default function App() {
   const { authUser, checkAuth, isCheckingAuth } = useAuthStore();

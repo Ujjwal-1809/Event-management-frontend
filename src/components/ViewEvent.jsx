@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEventStore } from "../store/useEventStore.js";
 import { useAuthStore } from "../store/useAuthStore.js";
 
-const EventDetails = () => {
+const ViewEvent = () => {
     const { id } = useParams(); // Get event ID from URL
     const { selectedEvent, getEventById, isLoadingEvent, deleteEvent } = useEventStore();
 const { authUser } = useAuthStore();
@@ -55,5 +55,5 @@ const navigate = useNavigate();
     );
 };
 
-export default EventDetails;
+export default ViewEvent;
 
